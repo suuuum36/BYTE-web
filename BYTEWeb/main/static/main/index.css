@@ -284,3 +284,48 @@ section.header {
 .news_d:hover {
     color: #00a6d7;
 }
+
+/*footer*/
+
+.footer {
+    background-color: #eaeaea;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 1.9rem;
+    padding-left: 1.9rem;
+    padding-bottom: 2.08rem;
+}
+
+.footer-right {
+    margin-top: 4.16rem;
+}
+.logo-black {
+    width: 8.5rem;
+    margin-bottom: 1.66rem;
+}
+
+.logo-black > img {
+    width: 100%;
+    height: auto;
+}
+
+.f-description {
+    font-size: 0.83rem;
+    line-height: 1.9;
+}
+
+.sns-link {
+    display: flex;
+    flex-direction: column;
+    width: 1.66rem;
+    min-height: 6.66rem;
+    justify-content: space-between;
+}
+
+.sns-link > a > img {
+    width: 100%;
+    height: auto;
+}
+
+
