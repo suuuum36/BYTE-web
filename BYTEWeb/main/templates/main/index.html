@@ -116,12 +116,77 @@
             </div>
         </section>
 
-        <section class = "subscription-form">
-            구독폼
+        <section class = "below-subscribe">
+            <div class = "logo"> 
+                <img src = "{% static 'main/img/logo.png' %} ">
+            </div>
+            <div class = "description">
+                BYTE와 함께하는 5분 똑똑해지기 프로젝트!
+            </div>
+
+            <div class = "subscribe-form">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div><input type = "text" placeholder = "이름" class = "name2" id = "name" name = "name"></input></div>
+                    <div><input type = "text" placeholder = "이메일" class = "email2" id = "email" name = "email"> </input></div>
+                    <div class = "checkbox">
+                        <input type = "checkbox" id ="checkbox"> </input>
+                        <label for = "checkbox"> 개인정보 수집 및 이용 동의 </label>
+                    </div>
+                    <div class = "agree-info"> 
+                        BYTE 뉴스레터를 받아볼 이메일 제공에 대해 동의합니다.
+                        BYTE 뉴스레터 구독을 취소할 시 개인정보는 폐기될 예정입니다.
+                    </div>
+                    <input type = "submit" id = "submit" value = "뉴스레터 무료로 구독하기"></input>
+                </form>
+            </div>
         </section>
 
         <section class = "links">
-            링크
+            <div class = "bg">
+                <img src = {% static 'main/img/links_bg.png'%}>
+                <div class = "links_inner">
+                    <div class = "donut donut_black">
+                        <img src = "{% static 'main/img/donut_black.png'%}">
+                    </div>
+
+                    <div class = "d-title" style = "color: black;">지난 뉴스레터</div>
+
+                    <div class = "daily_byte">
+                        <div class = "deco"> ************************************************************ </div>
+                        <a href = "https://stibee.com/api/v1.0/emails/share/Qy0MSCtVeJbRIFExsvgUx344PpzlqQ==">
+                            <div class = "news_t">지난주 뉴스 10분 요약</div>
+                            <div class = "news_d">2020.11.02 </div>
+                        </a>
+                        <a href = "https://stibee.com/api/v1.0/emails/share/OFs3pn0JBgRwzIcC4RxT6AQ5SWyPFw==">
+                            <div class = "news_t">인플레, 달러, 대체자산 : 무슨 관계가?</div>
+                            <div class = "news_d">2020.11.03 </div>
+                        </a>
+                        <a href = "https://stibee.com/api/v1.0/emails/share/l2EM3x3AI1S-JKIkuSfVd7pBs4xYCw==">
+                            <div class = "news_t">배달 전성시대, 언제까지?</div>
+                            <div class = "news_d">2020.11.04 </div>
+                        </a>
+                        <a href = "https://stibee.com/api/v1.0/emails/share/nM2yMaC_G1X7JMJ4VpO4PW5_YoORZg==">
+                            <div class = "news_t">국뽕이 차오르는 K-열풍</div>
+                            <div class = "news_d">2020.11.05 </div>
+                        </a>
+                        <a href = "https://stibee.com/api/v1.0/emails/share/lkN02sSEg8ChEqp_LK5ZCPpn11xTKA==">
+                            <div class = "news_t">미국 대선이 가져올 영향</div>
+                            <div class = "news_d">2020.11.06 </div>
+                        </a>
+                        <div class = "deco"> ************************************************************ </div>
+                        
+                        <a href = "https://open.kakao.com/o/g8HbQqqc">
+                            <div class = "news_t" >BYTE 카카오톡 오픈채팅방</div>
+                        </a>
+
+                        <a href = "https://www.notion.so/monthlycloset/c32a6a840d7044e4b8a9aa92b21a7b3e?v=68467dc798894de49fc0816b755e3b77">
+                            <div class = "news_t">상식 한입 모음 바로가기</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class = "footer">
