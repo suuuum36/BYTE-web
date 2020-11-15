@@ -33,15 +33,16 @@ def index (request):
         }
         
 
-        response_get = requests.get(URL, verify=False, headers = headers)
+        response_get = requests.get(URL, headers = headers)
         user_data = response_get.json()
         value = user_data['Value']
         emails = [email['email'] for email in value]
 
         if email in emails:
             print('already exists')
+            
         else:
-            response_post = requests.post(URL, verify=False, data=json.dumps(data), headers = headers)
+            response_post = requests.post(URL, data=json.dumps(data), headers = headers)
             print(response_post.text)
             
         return redirect('index')
