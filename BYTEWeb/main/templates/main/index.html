@@ -37,9 +37,11 @@
             </div>
 
             <div class = "header-inner">
-                <div class = "logo"> 
-                    <img src = "{% static 'main/img/logo.png' %} ">
-                </div>
+                <a href = "{% url 'index' %}"> 
+                    <div class = "logo"> 
+                        <img src = "{% static 'main/img/logo.png' %} ">
+                    </div>
+                </a>
 
                 <div class = "n">
                     <div class = "n-1">BYTE 소개</div>
@@ -58,10 +60,13 @@
                 <div class = "subscribe-form">
                     <form action="" method="POST">
                         {% csrf_token %}
-                        <div><input type = "text" placeholder = "이름" id = "name" name = "name"></input></div>
-                        <div><input type = "text" placeholder = "이메일" id = "email" name = "email"> </input></div>
+                        <div><input type = "text" placeholder = "이름" id = "name" name = "name" value = {{name}}></input></div>
+                        <div>
+                            <input type = "text" placeholder = "이메일" id = "email" name = "email" value = {{email}}> </input>
+                            <div class = "email-check"> {{ exist_alarm }} </div>
+                        </div>
                         <div class = "checkbox">
-                            <input type = "checkbox" id ="checkbox"> </input>
+                            <input type = "checkbox" id ="checkbox" name = "checkbox" value = "checked"> </input>
                             <label for = "checkbox"> 개인정보 수집 및 이용 동의 </label>
                         </div>
                         <div class = "agree-info"> 
@@ -78,7 +83,7 @@
 
         <section class = "function-description">
 
-            <div class = "donut">
+            <div class = "donut first-donut">
                 <img src = "{% static 'main/img/donut_blue.png'%}">
             </div>
 
@@ -119,7 +124,7 @@
                 <div class = "r-h-1">
                     <p>BYTE 뉴스레터는 </p>
                     <div>
-                        <p style = "font-weight : 600;">989명</p> 
+                        <p style = "font-weight : 600;"> {{ user_num }}명 </p> 
                         <p>이 구독중입니다.</p>
                     </div>
                 </div>
@@ -155,10 +160,14 @@
             <div class = "subscribe-form">
                 <form action="" method="POST">
                     {% csrf_token %}
-                    <div><input type = "text" placeholder = "이름" class = "name2" id = "name" name = "name"></input></div>
-                    <div><input type = "text" placeholder = "이메일" class = "email2" id = "email" name = "email"> </input></div>
+                    <div><input type = "text" placeholder = "이름" class = "name2" id = "name" name = "name" value = {{name}} ></input></div>
+                    <div>
+                        <input type = "text" placeholder = "이메일" class = "email2" id = "email" name = "email" value = {{email}}> </input>
+                        <div class = "email-check"> {{ exist_alarm }} </div>
+                    </div>
+                    
                     <div class = "checkbox">
-                        <input type = "checkbox" id ="checkbox"> </input>
+                        <input type = "checkbox" id ="checkbox" name = "checkbox" value = "checked"> </input>
                         <label for = "checkbox"> 개인정보 수집 및 이용 동의 </label>
                     </div>
                     <div class = "agree-info"> 
