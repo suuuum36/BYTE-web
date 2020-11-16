@@ -8,10 +8,18 @@ html {
     font-size: 12px;
 }
 
+/*웹*/
 @media (min-width: 1080px) {
 html {
     font-size: 14px;
 }
+}
+
+/*아이폰5이하*/
+@media (max-width : 320px) {
+    html {
+        font-size: 10px;
+    }
 }
 
 body {
@@ -24,6 +32,7 @@ section.header {
     background: black;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    position: relative;
 }
 
 .header-inner {
@@ -120,6 +129,7 @@ section.header {
     margin-right: auto;
     margin-left: auto;
     color: #00a6d7;
+    cursor: pointer;
 }
 
 .donut {
@@ -329,3 +339,36 @@ section.header {
 }
 
 
+/* 유의사항 팝업창 */
+
+.notice-board {
+    display: none;
+    position: absolute;
+    width: 23.76rem;
+    min-height: 38.33rem;
+    background-color: white;
+    z-index: 100000;
+    border-radius: 15.6px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3.64rem 1.95rem 3.64rem 1.95rem;
+}
+
+.cancel-button {
+    width: 1rem;
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    cursor: pointer;
+}
+
+.cancel-button > img {
+    width: 100%;
+    height: auto;
+}
+
+.n-description {
+    margin-top: 3rem;
+    line-height: 1.85;
+}
