@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'NanumSquare', sans-serif !important;
 }
 
 html { 
@@ -9,11 +10,17 @@ html {
 }
 
 /*웹*/
-@media (min-width: 1080px) {
+@media (min-width: 1080px) and (max-width:1299px) {
 html {
-    font-size: 14px;
+    font-size: 13px;
 }
 }
+
+@media (min-width: 1300px) {
+    html {
+        font-size: 15px;
+    }
+    }
 
 /*아이폰5이하*/
 @media (max-width : 320px) {
@@ -53,12 +60,12 @@ section.header {
 }
 
 .n { 
-    width: 18.5rem;
+    width: 20rem;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 2.4rem;
-    margin-bottom: 0.5rem;
+    margin-top: 2.7rem;
+    margin-bottom: 0.9rem;
     cursor: pointer;
 }
 
@@ -75,7 +82,7 @@ section.header {
 }
 
 .deco-line {
-    width: 20.41rem;
+    width: 22rem;
     height: 2px;
     background-image: linear-gradient(to right, #02dab6, #01cfbf 23%, #00b7d7 61%, #00a6d7);
     border-radius: 1.14px;
@@ -281,26 +288,34 @@ section.header {
 }
 
 .deco {
-    text-align: center;
+    width: 23.78rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.deco > img {
+    width: 100%;
+    height: auto;
 }
 
 .daily_byte {
     margin-top: 1.5rem;
 }
 
-.daily_byte > a {
+
+.daily_byte > .news_links > a {
     display: flex;
     color: black;
     text-decoration: none;
     text-emphasis: none;
+    justify-content: space-between;
 }
 
 .news_t {
     min-width: 17rem;
     line-height: 2.83;
-    margin-right: 2.91rem;
     font-size: 1rem;
 }
 
@@ -345,6 +360,7 @@ section.header {
 .f-description {
     font-size: 0.83rem;
     line-height: 1.9;
+    font-weight: 500;
 }
 
 .sns-link {
@@ -403,4 +419,90 @@ section.header {
     margin-top: 1rem;
     font-size: 1rem;
     margin-left: 0.5rem;
+}
+
+
+/*1080 이상일 때 리뷰 섹션 */
+
+@media (min-width:1080px) {
+
+    .review {
+        display: flex;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .r-header {
+        position: relative;
+        width: 50%;
+        background-image: linear-gradient(107deg, #02dab6 1%, #01cec0 28%, #00b8d7 74%, #00a7d7 104%, #00a6d7 107%);
+        color: white;
+        margin: 0;
+        padding: 0;
+        height: 40.15rem;
+
+    }
+
+    .r-h-1 {
+        position: absolute;
+        font-size: 2rem;
+        text-align: initial;
+        line-height: 1.5;
+        top: 5rem;
+        left: 3.84rem;
+    }
+    
+    .r-h-1 > div {
+        display: flex;
+        width: fit-content;
+        text-align: initial;
+        margin: 0;
+    }
+
+    .r-h-2 {
+        position: absolute;
+        font-size: 1.7rem;
+        text-align: initial;
+        left: 3.84rem;
+        bottom: 5rem;
+    }
+
+    .r2 {
+        display: grid;
+        grid-template-columns: 16.9rem 16.9rem;
+        grid-template-rows: 1.7rem 11rem 1.7rem 10rem;
+        gap: 1rem 3rem;
+        width: fit-content;
+        font-size: 1rem;
+        line-height: 1.8;
+        margin: auto;
+    }
+
+    .r2-person {
+        color: #00a6d7;
+        font-size: 1.125rem;
+    }
+}
+
+
+@media (min-width:1530px) {
+    .r-header {
+        height: 45rem;
+    }
+
+    .r2 {
+    display: grid;
+    grid-template-columns: 22.2rem 22.2rem;
+    grid-template-rows: 1.86rem 16.33rem 1.86rem 10rem;
+    gap: 1.76rem 3rem;
+    width: fit-content;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: auto;
+    }
+
+    .r2-person {
+        color: #00a6d7;
+        font-size: 1.3rem;
+    }
 }
