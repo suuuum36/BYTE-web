@@ -33,10 +33,6 @@ body {
     font-size: 1.125rem;
 }
 
-.for_thumbnail {
-    display: none;
-}
-
 section.header {
     width: 100%;
     height: fit-content;
