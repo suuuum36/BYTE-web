@@ -39,7 +39,7 @@ def index (request):
         
         data = {
         "eventOccuredBy": "MANUAL",
-        "confirmEmailYN": "Y",
+        "confirmEmailYN": "N",
         "groupIds": [
         ],
         "subscribers": [
@@ -70,7 +70,7 @@ def index (request):
                     checked = request.POST.getlist('checkbox')
                     if checked != [] :
                         response_post = requests.post(URL, data=json.dumps(data), headers = headers)
-                        exist_alarm = "메일함에서 인증을 완료해주세요!"
+                        exist_alarm = "BYTE 뉴스레터 구독이 완료되었습니다!"
                         print(response_post.text)
                         print(checked)
                     else:
