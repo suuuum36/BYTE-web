@@ -273,7 +273,7 @@ section.header {
 
 .bg > img {
     width: 100%;
-    min-height: 42.5rem;
+    height: 42.5rem;
 }
 
 .links_inner {
