@@ -26,13 +26,9 @@ SECRET_KEY = 'szrgojqt#@w2li#!m89-1@bvd@@pe)w6$su1ekxg*@igwad)+l'
 DEBUG = True
 
 ALLOWED_HOSTS = ['52.79.101.221','mydailybyte.com']
-
 #ALLOWED_HOSTS = ['127.0.0.1']
 
-
 # Application definition
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'google_analytics',
 ]
+
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'G-MQLDRHHQNP',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

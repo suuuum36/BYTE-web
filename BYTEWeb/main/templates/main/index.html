@@ -1,28 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
 {% load  static %} 
-<html>
-    <head>
-        <title> 데일리 바이트 DAILY BYTE </title>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <link rel = "stylesheet" href = "{%static 'main/index.css'%}">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="{% static 'main/index.js' %}"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-        <link rel="shortcut icon" href = "{% static 'main/img/donut_blue.png'%}">
-        <meta name="robots" content="ALL"> 
-        <meta name="robots" content="index,follow">
-        <meta name = "subject" content="데일리 바이트 DAILY BYTE">
-        <meta name = "keywords" content="데일리바이트, 바이트, dailybyte, byte, 바이트 뉴스레터, 데일리바이트 뉴스레터">
-        <meta name ="description" content="가장 쉬운 비즈니스 뉴스 읽기, DAILY_BYTE 뉴스레터">
-        <meta name ="author" content="BYTE">
-        <meta name ="reply-to" content="byteteam365@gmail.com">
-        <meta property="og:url" content="http://mydailybyte.com/">
-        <meta property="og:site_name" content="데일리 바이트 DAILY BYTE">
-        <meta property="og:title" content = "데일리 바이트 DAILY BYTE">
-        <meta property="og:description" content = "가장 쉬운 비즈니스 뉴스 읽기, DAILY_BYTE 뉴스레터">
-        <meta property="og:image" content = "https://i.esdrop.com/d/VCGPeKTSuP.png">
-        <meta name="naver-site-verification" content="44b715588ba7fe1b7e658d47192d26a26aae4f06" />
-    </head>
-    <body>
+
         <section class = "header">
             <div class = "notice-board">
                 <div class = "cancel-button">
@@ -206,25 +185,25 @@
                             <img src = "{% static 'main/img/deco-line.png' %}">
                         </div>
                         <div class = "news_links">
-                            <a href = "https://stibee.com/api/v1.0/emails/share/iVzFSPCCUnXJUC1ha5qiWQ3eP8erBw==">
-                                <div class = "news_t">지난주 뉴스 10분 압축💌</div>
-                                <div class = "news_d">2020.12.21</div>
+                            <a href = "https://stibee.com/api/v1.0/emails/share/P6AaPbw2WGlGCvQNymjFGIzsd0237g==">
+                                <div class = "news_t">단숨에 정리하는🏂 지난주 핵심 소식!</div>
+                                <div class = "news_d">2020.12.28</div>
                             </a>
-                            <a href = "https://stibee.com/api/v1.0/emails/share/m08uN2sVsTFJ7ocZCNYYbFx-hGFt_A==">
-                                <div class = "news_t">하늘에서 1,000조가 내려와💸</div>
-                                <div class = "news_d">2020.12.22</div>
+                            <a href = "https://stibee.com/api/v1.0/emails/share/qnSS4GoHvIQaYM5HVHDOBbWehaX9Fw==">
+                                <div class = "news_t">(광고)배달의 민족 IN, 요기요 OUT</div>
+                                <div class = "news_d">2020.12.29</div>
                             </a>
-                            <a href = "https://stibee.com/api/v1.0/emails/share/uxVdMHcBV0vou5JpMDWREgFwozJXsQ==">
-                                <div class = "news_t">무럭무럭 홈트시장💪</div>
-                                <div class = "news_d">2020.12.23</div>
+                            <a href = "https://stibee.com/api/v1.0/emails/share/1THNC7GEyB-t4wThxYpsoz_VCQcvaQ==">
+                                <div class = "news_t">쿠팡이 꿈꾸는 세상</div>
+                                <div class = "news_d">2020.12.30</div>
                             </a>
-                            <a href = "https://stibee.com/api/v1.0/emails/share/ADNivdX_GnsXRr8GeQyCJLX4Lo8NzQ==">
-                                <div class = "news_t">애플, 점점 웅장해지는 세계관🍎</div>
-                                <div class = "news_d">2020.12.24</div>
+                            <a href = "https://stibee.com/api/v1.0/emails/share/TPIvMT8jTiTJyYMIwcWYMZTIiXVWpg==">
+                                <div class = "news_t">2020 핵심 키워드 TOP 9✨</div>
+                                <div class = "news_d">2020.12.31</div>
                             </a>
-                            <a>
-                                <div class = "news_t">Merry Christmas🎄</div>
-                                <div class = "news_d">2020.12.25</div>
+                            <a href = "https://stibee.com/api/v1.0/emails/share/szCsXZHXf5a53XDkL26Eu_zygyDenA==">
+                                <div class = "news_t">NEW YEAR 레터: 2021 미리보기</div>
+                                <div class = "news_d">2021.01.01</div>
                             </a>
                             <div class = "deco"> 
                                 <img src = "{% static 'main/img/deco-line.png' %}">
@@ -272,5 +251,5 @@
             </div>
         </section>
     <script type="text/javascript" src="{% static 'main/index.js' %}"></script>
-    </body>
-</html>
+
+{% endblock %}
