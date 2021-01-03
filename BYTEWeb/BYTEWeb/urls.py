@@ -23,7 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
     path('robots.txt/', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
-    re_path('djga/', include('google_analytics.urls')),
 ] 
 
 static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

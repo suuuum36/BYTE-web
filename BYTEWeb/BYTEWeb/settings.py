@@ -37,12 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
-    'google_analytics',
 ]
-
-GOOGLE_ANALYTICS = {
-    'google_analytics_id': 'G-MQLDRHHQNP',
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
