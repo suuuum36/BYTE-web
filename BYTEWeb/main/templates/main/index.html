@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-{% load  static %} 
-
+{% load  static %}
+        <a href = "https://page.stibee.com/archives/81111">
+            <button class = "news_button">
+                <img class = "news_button1" src = "{% static 'main/img/donut_black.png'%}">
+                <img class = "news_button2" src = "{% static 'main/img/donut_white.png'%}" style = "display:none;">
+                <span class = "news_button_text">뉴스레터 맛보기</span>
+            </button>
+        </a>
         <section class = "header">
             <div class = "notice-board">
                 <div class = "cancel-button">
