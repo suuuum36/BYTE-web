@@ -45,6 +45,10 @@ if ($(window).width() > 800) {
 
 
 $(window).scroll(function() {
-    $('.news_button').toggleClass('news_button_remove', $(window).height() + $(window).scrollTop() == $(document).height());
+    console.log($(window).height());
+    console.log($(window).scrollTop());
+    console.log($(document).height());
+    
+    $('.news_button').toggleClass('news_button_remove', $(window).height() + $(window).scrollTop() >= $(document).height());
     
 });
