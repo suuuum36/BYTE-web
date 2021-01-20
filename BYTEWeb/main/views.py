@@ -16,12 +16,17 @@ def index (request):
         }
         
         response_get = requests.get(URL, headers = headers)
-        user_data = response_get.json()
-        value = user_data['Value']
-        emails = [email['email'] for email in value]
-        user_num = len(emails)
         
-        return render(request, 'main/index.html', {'user_num' : user_num})
+        if False:
+            user_data = response_get.json()
+            value = user_data['Value']
+            emails = [email['email'] for email in value]
+            user_num = len(emails)
+            
+            return render(request, 'main/index.html', {'user_num' : user_num})
+        
+        else:
+            return render(request, 'main/index.html')
     
     elif request.method == 'POST':
         
@@ -50,11 +55,11 @@ def index (request):
         ]
         }
         
-        response_get = requests.get(URL, headers = headers)
-        user_data = response_get.json()
-        value = user_data['Value']
-        emails = [email['email'] for email in value]
-        user_num = len(emails)
+        # response_get = requests.get(URL, headers = headers)
+        # user_data = response_get.json()
+        # value = user_data['Value']
+        # emails = [email['email'] for email in value]
+        # user_num = len(emails)
         
         if name != '' and email != '':
             
@@ -62,7 +67,8 @@ def index (request):
             
             if email_match != None:
                 
-                if email in emails:
+                if False:
+                # if email in emails:
                     exist_alarm = "이미 존재하는 이메일입니다."
                     print('already exists')
                     
@@ -82,4 +88,4 @@ def index (request):
         else:
             exist_alarm = "이름과 이메일을 모두 작성해주세요."
             
-        return render(request, 'main/index.html', {'user_num' : user_num, 'exist_alarm' : exist_alarm , 'name':name, 'email':email})  
+        return render(request, 'main/index.html', {'exist_alarm' : exist_alarm , 'name':name, 'email':email})  
