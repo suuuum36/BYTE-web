@@ -57,7 +57,7 @@ $(window).scroll(function() {
 var $userNum = $('.user-number')
 var $innerText = $('.email-check').text();
 var $count = localStorage.getItem($userNum);
-localStorage.setItem($userNum, 7420);
+// localStorage.setItem($userNum, 7420);
 
 console.log($innerText);
 console.log(localStorage.getItem($userNum));
