@@ -29,7 +29,7 @@ def index (request):
             return render(request, 'main/index.html')
     
     elif request.method == 'POST':
-        
+
         URL =  "https://api.stibee.com/v1/lists/81111/subscribers"
         
         headers = {
@@ -88,4 +88,4 @@ def index (request):
         else:
             exist_alarm = "이름과 이메일을 모두 작성해주세요."
             
-        return render(request, 'main/index.html', {'exist_alarm' : exist_alarm , 'name':name, 'email':email})  
+        return render(request, 'main/index.html', {'exist_alarm' : exist_alarm , 'name':name, 'email':email })  
