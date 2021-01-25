@@ -8,7 +8,7 @@ from django.db.models import Count
 def index (request):
     if request.method == 'GET': 
         subscribers = Account.objects.count()
-        subscribers += 7515
+        subscribers += 7525
         return render(request, 'main/index.html', {'subscribers': subscribers})
     
     elif request.method == 'POST':
@@ -70,5 +70,5 @@ def index (request):
             exist_alarm = "이름과 이메일을 모두 작성해주세요."
         
         subscribers = Account.objects.count()
-        subscribers += 7524
+        subscribers += 7525
         return render(request, 'main/index.html', {'exist_alarm' : exist_alarm , 'name':name, 'email':email, 'subscribers':subscribers })  
