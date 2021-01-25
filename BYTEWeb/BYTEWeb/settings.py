@@ -78,13 +78,15 @@ DATABASES = {
         'NAME': 'BYTE_newsletter',
         'USER': 'root',
         'PASSWORD': 'dm931625',
-        'HOST': '52.79.101.221',
+        'HOST': 'mydailybyte.com',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
         }
     }
 }
+
+#52.79.101.221
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
