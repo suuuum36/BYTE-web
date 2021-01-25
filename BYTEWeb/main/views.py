@@ -70,5 +70,5 @@ def index (request):
             exist_alarm = "이름과 이메일을 모두 작성해주세요."
         
         subscribers = Account.objects.count()
-        subscribers += 7515
+        subscribers += 7524
         return render(request, 'main/index.html', {'exist_alarm' : exist_alarm , 'name':name, 'email':email, 'subscribers':subscribers })  
