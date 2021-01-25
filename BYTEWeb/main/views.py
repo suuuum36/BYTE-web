@@ -1,11 +1,13 @@
 from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.urls import reverse
-from .models import Subscriber
+from .models import Accounts
 import requests, json, re
+from django.db.models import Count
 
 # Create your views here.
 def index (request):
     if request.method == 'GET': 
+        subscribers= Accounts.objects.count()
         
         URL =  "https://api.stibee.com/v1/lists/81111/subscribers"
         
@@ -26,7 +28,7 @@ def index (request):
             return render(request, 'main/index.html', {'user_num' : user_num})
         
         else:
-            return render(request, 'main/index.html')
+            return render(request, 'main/index.html', {'subscribers': subscribers})
     
     elif request.method == 'POST':
 
