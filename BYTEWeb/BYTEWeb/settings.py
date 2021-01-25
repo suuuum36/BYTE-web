@@ -76,9 +76,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'BYTE_newsletter',
-        'USER': 'root',
-        'PASSWORD': 'dm931625',
-        'HOST': 'mydailybyte.com',
+        'USER': 'byte',
+        'PASSWORD': 'bytenews1!',
+        'HOST': '52.79.101.221',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
