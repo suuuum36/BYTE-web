@@ -84,6 +84,11 @@ DATABASES = {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
         }
     }
+    
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': 'mydatabase',
+    # }
 }
 
 #52.79.101.221
