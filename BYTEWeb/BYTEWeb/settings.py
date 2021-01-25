@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'BYTE_newsletter',
         'USER': 'root',
         'PASSWORD': 'dm931625',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
