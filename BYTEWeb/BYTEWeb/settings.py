@@ -73,22 +73,22 @@ WSGI_APPLICATION = 'BYTEWeb.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'BYTE_newsletter',
-    #     'USER': 'root',
-    #     'PASSWORD': 'dm931625',
-    #     'HOST': '127.0.0.1',
-    #     'PORT': '3306',
-    #     'OPTIONS': {
-    #         'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
-    #     }
-    # }
-    
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'NewsletterByte',
+        'USER': 'daily_byte_web',
+        'PASSWORD': 'dbweb12345!',
+        'HOST': 'news-byte-user-profile.curoazeuejfa.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
+        }
     }
+    
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': 'mydatabase',
+    # }
 }
 
 #52.79.101.221
