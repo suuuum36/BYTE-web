@@ -59,6 +59,7 @@ def index (request):
                         
                         # DB에 저장하기
                         new_subscribers = Account.objects.create(name=name, email=email)
+                        
                     else:
                         exist_alarm = "이용약관에 동의해주세요."
                         
