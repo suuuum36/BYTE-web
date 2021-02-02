@@ -91,9 +91,9 @@ section.header {
 
 .description { 
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-    line-height: 1.74;
+    margin-top: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
 }
 
 .subscribe-form {
@@ -579,3 +579,4 @@ section.header {
 .news_button_remove {
     visibility: hidden;
 }
+

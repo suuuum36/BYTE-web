@@ -55,19 +55,3 @@ $(window).scroll(function() {
 });
 
 
-/* 구독자수 */
-// var $userNum = $('.user-number')
-//var $innerText = $('.email-check').text();
-// var $count = localStorage.getItem($userNum);
-// // localStorage.setItem($userNum, 7420);
-//console.log($innerText);
-// console.log(localStorage.getItem($userNum));
-
-// if ($innerText.indexOf('BYTE 뉴스레터 구독이 완료되었습니다!') != -1 ) {
-//     $count = Number($count)+1;
-//     localStorage.setItem($userNum, $count);
-//     console.log($count);
-// };
-
-// var $countText = String($count)+'명';
-// $userNum.text($countText);
