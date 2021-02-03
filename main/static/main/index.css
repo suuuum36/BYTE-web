@@ -89,11 +89,12 @@ section.header {
     margin: 0 auto;
 }
 
+/*수정*/
 .description { 
     text-align: center;
     margin-top: 1.8rem;
     margin-bottom: 2rem;
-    line-height: 2;
+    line-height: 1.8;
 }
 
 .subscribe-form {
