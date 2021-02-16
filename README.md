@@ -14,3 +14,5 @@
 
 ### 5. 지난 뉴스레터 다시보기 + footer
 <img width="1680" alt="스크린샷 2021-02-16 오후 9 50 32" src="https://user-images.githubusercontent.com/48682172/108065746-cad60000-70a1-11eb-9f8a-a3da224fe105.png">
+
+### URL : http://mydailybyte.com/
