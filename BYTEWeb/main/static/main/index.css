@@ -105,6 +105,7 @@ section.header {
     margin-right: auto;
     margin-left: auto;
     color: #00a6d7;
+    overflow-x : auto;
 }
 
 .description { 
