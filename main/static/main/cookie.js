@@ -124,14 +124,23 @@
 var date = new Date();
 date.setTime(date.getTime() + (60 * 1000));
 
-$('.popup_close').click(function closeOneDay(){                 
-    $.cookie('popup','hidden', { expires: 1 });
-    $(".popup").hide();
+$('.popup_close').click(function closeOneDay(){   
+	if ($('.popup_checkbox_check').is(":checked") == true) {
+		console.log("오늘 하루 열지 않음");
+		$.cookie('popup','hidden', { expires: 1 });
+		$(".popup").hide();
+		$('.popup_dim').hide();
+	} else {
+		$(".popup").hide();
+		$('.popup_dim').hide();
+	}             
 });
 
 
 if($.cookie('popup')=="hidden"){
     $(".popup").hide();
+	$('.popup_dim').hide();
 } else {
 	$(".popup").show();
+	$('.popup_dim').show();
 }

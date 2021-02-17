@@ -4,41 +4,23 @@
     font-family: 'NanumSquare', sans-serif !important;
 }
 
-html { 
-    /*mobile 폰트사이즈 */
-    font-size: 12px;
+.popup_dim {
+    background-color: black;
+    opacity: 70%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
 }
-
-/*웹*/
-@media (min-width: 1080px) and (max-width:1299px) {
-html {
-    font-size: 13px;
-}
-}
-
-@media (min-width: 1300px) {
-    html {
-        font-size: 15px;
-    }
-    }
-
-/*아이폰5이하*/
-@media (max-width : 320px) {
-    html {
-        font-size: 10px;
-    }
-}
-
 
 .popup {
-    width: 34.5rem;
-    position: fixed;
+    width: 37rem;
     z-index: 10000;
-    background-color: black;
     display: flex;
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    top: 12.5rem;
+    transform: translate(-50%, -50%);
 }
 
 .popup > img {
@@ -67,4 +49,26 @@ html {
 
 .popup_url:hover {
     cursor: pointer;
+}
+
+.popup_checkbox {
+    position: absolute;
+    display: block;
+    bottom: 6.2rem;
+    color: white;
+    left: 2rem;
+}
+
+@media (max-width:600px) {
+    .popup_dim {
+        opacity: 80%;
+    }
+    
+    .popup {
+        width: 28rem;
+    }
+    .popup_checkbox {
+        left: 0;
+        bottom: -2.3rem;
+    }
 }
