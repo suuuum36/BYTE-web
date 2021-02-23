@@ -189,7 +189,7 @@ section.header {
     margin-right: auto;
     margin-left: auto;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
 }
 
 .donut > img {
@@ -206,7 +206,7 @@ section.header {
     font-size: 1.25rem;
     color: #00a6d7;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .d-content {
