@@ -206,7 +206,7 @@ section.header {
     font-size: 1.25rem;
     color: #00a6d7;
     font-weight: 600;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.7rem;
 }
 
 .d-content {
@@ -318,8 +318,8 @@ section.header {
 
 .deco {
     width: 23.78rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0.7rem;
     margin-right: auto;
     margin-left: auto;
 }
