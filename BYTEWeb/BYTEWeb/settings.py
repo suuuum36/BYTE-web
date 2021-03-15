@@ -78,7 +78,7 @@ DATABASES = {
         'NAME': 'NewsletterByte',
         'USER': 'daily_byte_web',
         'PASSWORD': 'dbweb12345!',
-        'HOST': 'news-byte-user-profile.curoazeuejfa.ap-northeast-2.rds.amazonaws.com',
+        'HOST': 'byte.cl8pbkypdikt.ap-northeast-2.rds.amazonaws.com',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
