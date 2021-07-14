@@ -15,6 +15,7 @@
 
 .popup {
     width: 37rem;
+    height: 37rem;
     z-index: 10000;
     display: flex;
     position: fixed;
@@ -65,6 +66,7 @@
     }
     
     .popup {
+        height: 28rem;
         width: 28rem;
     }
     .popup_checkbox {
